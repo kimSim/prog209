@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Color Picker
+    </title>
+    
+    <style>
+        #input{
+            padding: 10px;
+        }
+/*
+        #inputTwo{
+            padding: 10px;
+        }
+        #inputThree{
+            padding: 10px;
+        }
+*/
+        #rDiv{
+            color: red;
+            padding: 15px;
+            float: left;
+        }
+        #gDiv{
+            color: green;
+            padding: 15px;
+            float: left;
+        }
+        #bDiv{
+            color: blue;
+            padding: 15px;
+            float: left;
+        }
+        p{
+            margin: 25px;
+        }
+        #Mh1{
+            margin: 30px;
+        }
+        body{
+            background-color: beige;
+        }
+        #btn{
+            margin: 27px;
+            border: 1px solid black;
+        }
+        #box{
+            width: 200px;
+			height: 35px;
+			margin-left: 275px;          
+        }
+    
+    
+    </style>
+    
+</head>
+    
+<body>
+    <h1 id="Mh1">CSS Color Displayer</h1>
+    
+    <p>For each color below, enter a number between 0 and 255</p>
+    
+    <div id="container">
+        <div id="rDiv">
+            Red:
+            <input type="text" id="input" value=180>
+        </div>
+        
+        <div id="gDiv">
+            Green:
+            <input type="text" id="input" value=180>
+        </div>
+        
+        <div id="bDiv">
+            Blue:
+            <input type="text" id="input" value=180>
+        </div>
+        
+            </div> 
+<!--    end container div -->
+    
+        <div>
+            <button id="btn">Show Color!</button> 
+        </div>
+        
+        <div>
+            <input type= "text" id="box">
+        </div>
+    
+    <script>
+    
+        let btn = document.getElementById("btn");
+        let box = document.getElementById("box");
+        let input = document.getElementById("input");
+//        let input = document.getElementById("inputTwo");
+//        let input = document.getElementById("inputThree");
+        
+        btn.addEventListener("click", clickHandler, false);
+		
+	    function clickHandler() {
+            box.style.backgroundColor = "rgb(" + ("input") + ", " + ("inputTwo") + ", " + ("inputThree")")";
+        }
+    
+        let displayOutput = function () {
+            let input = input.value;
+			output.innerHTML += input + "<br>";
+		};
+    
+        btn.addEventListener("click",displayOutput,false);
+        
+    </script>
+
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
