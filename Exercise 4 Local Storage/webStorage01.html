@@ -28,13 +28,15 @@ function init(){
 function saveInfo(){
 	var city=document.getElementById("city").value;
 	var comments=document.getElementById("comments").value;
-    var donut1 = document.getElementById("donut1").value;
-    var donut2 = document.getElementById("donut2").value;
+	
+   	var donut1 = document.getElementById("donut1").value;
+    	var donut2 = document.getElementById("donut2").value;
 	
 	localStorage.setItem("cityName",city);
 	localStorage.setItem("userComments",comments);
-    localStorage.setItem("donutOne", donut1);
-    localStorage.setItem("donutTwo", donut2);
+	
+    	localStorage.setItem("donutOne", donut1);
+    	localStorage.setItem("donutTwo", donut2);
 	
 	
 	display();
@@ -46,8 +48,8 @@ function display(){
 	var theCity=localStorage.getItem("cityName");
 	var theComments=localStorage.getItem("userComments");
     
-    var displayDonut1 = localStorage.getItem("donutOne");
-    var displayDonut2 = localStorage.getItem("donutTwo");
+    	var displayDonut1 = localStorage.getItem("donutOne");
+    	var displayDonut2 = localStorage.getItem("donutTwo");
 	
 	if(theComments==undefined){
 		document.getElementById("useroutput").innerHTML="";
