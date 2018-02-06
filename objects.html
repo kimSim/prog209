@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    
+    <script>
+        var dog = {
+            name: "Syrios",
+            breed: "Belgian malinoi",
+            size: "medium",
+            favoriteToys: ["ball", "stuffed mouse"],
+            puppies: 5,
+            run: function(x){
+                return this.puppies - x;
+            } // end function
+            
+        };
+        
+        let puppiesLeft = dog.run(1);       //
+        alert (puppiesLeft);            
+        
+        
+       // dog.name = "spot";  ---- Will change name of dog to spot.
+        
+        dog.bark = "medium"; // adding in a property
+        
+        alert(dog);
+        
+        dog.run(); // calling function 
+
+    </script>
+    
+</body>
+
+
+
+</html>
