@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercise 6 Arrays</title>
+</head>
+
+<body>
+
+<div id="main">
+
+</div> 
+
+<script>
+    var planetNames = ["Jupiter", "Venus", "Saturn", "Mars", "Earth"];
+    var distancesFromEarth = [5.2, 0.72, 9.5, 1.5, 0];
+    var sunnyInAugust = [false, true, false, true, true];
+
+    for (var i = 0; i < planetNames.length; i++)
+    {
+        document.getElementById("main").innerHTML = (planetNames[i] + "<br />" + distancesFromEarth[i] + "<br />" + sunnyInAugust[i] + " <br />" + "----------");
+        document.getElementById("main").style.color = "green";
+        document.getElementById("main").style.fontWeight = "bold";
+        
+//      console.log(distancesFromEarth[i]);
+//      console.log(sunnyInAugust[i]);
+//      console.log("----------");
+        
+//        document.getElementById("main").innerHTML = (planetNames[0]) + "<br />" + (planetNames[1]) + "<br />" +  (planetNames[2]) + "<br />" +  (planetNames[3]);
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>
