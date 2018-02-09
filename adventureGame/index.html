@@ -1,0 +1,120 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>A time far, far away...</title>    
+    <link rel="stylesheet" href="css.css"> <!--css reference-->
+</head>
+<body>
+    
+<div id="main">
+    <h1>The Unknown</h1>
+    <img src="" width="600" height="550">
+    <p id="output"></p>
+    <input id="input" type="text"> 
+    <button id="enterBut">Travel</button>
+    <button id="saveBut">Save</button>
+    <button id="load">Load</button>
+</div>
+    
+    
+<script>
+        
+    var room = []; // array with rooms
+
+    room[0] = "The planet Mars.";
+    room[1] = "Something very familiar.. Ah, Elon's roadster.";
+    room[2] = "The blazing Sun.";
+    room[3] = "An unfamiliar obect.";
+    room[4] = "Chilling with your friends in a time travel pod.";
+    room[5] = "The Earths decaying moon.";
+    room[6] = "An unknown time in space.";
+    room[7] = "The ring of Saturn.";
+    room[8] = "Asteroid belt.";
+    
+    var roomLocation = 4; // start
+    
+    var images = []; // array with set images
+    
+    images[0] = "images/marsPic.png";
+    images[1] = "images/roadsterPic.png";
+    images[2] = "images/sunPic.png";
+    images[3] = "images/objectPic.png";
+    images[4] = "images/travelpodPic.png";
+    images[5] = "images/moonPic.png";
+    images[6] = "images/dimensionPic.png";
+    images[7] = "images/saturnPic.png";
+    images[8] = "images/asteroidPic.png"; 
+    
+    var blockedPathMessages = [];  // blocked path messages
+
+    blockedPathMessages[0] = "There aren't enough resrouces to survive here.";
+    blockedPathMessages[1] = "Particles from Falcon Heavy are heading your way, move away quickly";
+    blockedPathMessages[2] = "You start to boil up, you'd better get going.";
+    blockedPathMessages[3] = "The object is rumbling, almost as if it is going to explode.";
+    blockedPathMessages[4] = "";
+    blockedPathMessages[5] = "A force is holding you back.";
+    blockedPathMessages[6] = "You don't want to fall off the edge of space, now do you?";
+    blockedPathMessages[7] = "Strange creatures are protecting this pathway.";
+    blockedPathMessages[8] = "There are too many asteroids in the way.";
+    
+    var helpMessages = [];
+
+    helpMessages[0] = "";
+    helpMessages[1] = "";
+    helpMessages[2] = "";
+    helpMessages[3] = "";
+    helpMessages[4] = "";
+    helpMessages[5] = "";
+    helpMessages[6] = "";
+    helpMessages[7] = "";
+    helpMessages[8] = "";
+    
+    
+    var items = ["rock"];  // rock in asteroid array
+    var itemLocations = [8];
+
+    var backpack = []; // user items
+    
+    var playersInput = ""; // user input
+    
+    var gameMessage = "Welcome to the hot tub time machine, yes just like the movie. You've had a few drinks and wander off to space, literally. Directions: north, east, south, west. You may come across items you can take.";
+
+
+    var actionSet = ["north","east", "south", "west", "help", "take"]; // actions (so far)
+    //use / drop 
+    
+    var actionCur = "";
+    
+    var itemsSet = ["rock"]; // items
+    
+    var itemCur = ""; //store item
+    
+    var image = document.querySelector("img"); // creating image element to be used
+    
+    var output = document.querySelector("#output"); // output field
+    var input = document.querySelector("#input"); // input field
+    
+    // ------------------------Buttons---------------------------
+    
+    var Ebutton = document.querySelector("enterBut");
+    button.addEventListener("click", clickHandler, false);
+    button.addEventListener("mousedown", mousedownHandler, false);
+    button.addEventListener("mouseout", mouseoutHandler, false);
+
+    window.addEventListener("keydown", keydownHandler, false); // if "enter" key
+    
+//    render(); // displayings user location
+    
+    
+    
+</script>
+  
+    
+    
+    
+    
+</body>
+
+
+
+</html>
